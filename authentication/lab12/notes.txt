@@ -1,0 +1,9 @@
+Lab12: Password brute-force via passeord change
+
+Target goal - Brute force carlos's password in the password change functionality
+
+Your credential: wienner:peter
+Victim's username: carlos
+
+new password don't match && current password is incorrect -> current password is incorrect
+new password don't match && current password is correct -> New password do not match. (This is crucial)

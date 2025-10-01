@@ -1,0 +1,9 @@
+Lab 2: Basic SSRF against another back-end system
+
+vulnerable feature - stock check functionality
+
+Goal: use the stock check functionality to scan the internal 192.168.0.X range for an admin interface on port 8080, then use it to delete the user carlos
+
+Analysis: Internal Server running on 192.168.0.225:8080 on product stock check page.
+Found admin page : 192.168.0.225:8080/admin
+Deleted carlos account.

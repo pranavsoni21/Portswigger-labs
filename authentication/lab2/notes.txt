@@ -1,0 +1,8 @@
+Lab 2 : 2FA simple bypass
+
+Target: Bypass 2FA to access carlo's account page.
+
+Your credential: wiener:peter
+Victim's credentials : carlos:montoya
+
+how you solved: by dropping the page which needs 4-digit code to authorise

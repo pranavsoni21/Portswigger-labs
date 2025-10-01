@@ -1,0 +1,15 @@
+lab3 : SSRF with blacklist-based input filter
+
+Vulnerable function: Stock check feature
+
+Goal: change the stock check URL to access the admin interface at http://localhost/admin and delete the user carlos.
+
+The developer has deployed two weak anti-SSRF defenses that you will need to bypass.
+
+Analysis:
+It fetches stock from an Internal server. - stockApi=http://stock.weliketoshop.net:8080/product/stock/check?productId=2&storeId=1
+
+We can convert this url to connect to Internal server: http://127.0.0.1/admin
+But It was blocking any sensitive content from url, so we can url encode it and also conver 127.0.0.1 to 127.1
+
+Bypassed via double url encoding: http://127.1/%25%36%31dmin

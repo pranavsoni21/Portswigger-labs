@@ -1,0 +1,22 @@
+Lab: Broken brute-force protection, IP block
+
+Target: brute force the victim's password, then log in and access their account page.
+
+Your credentials: wiener:peter
+Victim's username: carlos
+
+username list:
+wiener
+carlos
+carlos
+wiener
+carlos
+carlos
+
+password list:
+peter
+123456
+password
+peter
+12345678
+qwerty

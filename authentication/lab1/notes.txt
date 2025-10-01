@@ -1,0 +1,6 @@
+Lab 1: Username enumeration via different responses.
+
+Target goal: Enumerate a valid username and passwords to access the application.
+
+username: am
+password: 12345
