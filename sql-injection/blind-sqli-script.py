@@ -34,10 +34,10 @@ def injection(length):
     return passwd
 
 
-#print("Getting length....Please be patient...")
-#pass_length = get_length()
-#print(f"Password length: {pass_length}")
+print("Getting length....Please be patient...")
+pass_length = get_length()
+print(f"Password length: {pass_length}")
 
 print("Now, trying to get password. Please wait for a while!")
-Password = injection(20)
+Password = injection(pass_length)
 print(f"Found password: {Password}")
